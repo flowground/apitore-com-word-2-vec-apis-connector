@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "access_token": {
+            "required": true,
+            "type": "string"
+        },
+        "word": {
+            "required": true,
+            "type": "string"
+        },
+        "num": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+        }
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "title": "Word2Vec APIs",
+    "description": "Word2Vec.<BR />[Endpoint] https://api.apitore.com/api/8",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/apitore.com/word2vecApis/1.0.2/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://api.apitore.com/api/8",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "analogyUsingGET": {
+            "main": "./lib/actions/analogyUsingGET.js",
+            "title": "Word2Vec analogy",
+            "description": "Word2Vec JaWikipedia 2016-9-15 dump.<BR />Response<BR />&nbsp; Github: <a href=\"https://github.com/keigohtr/apitore-response-parent/tree/master/word2vec-response\">word2vec-response</a><BR />&nbsp; Class: com.apitore.banana.response.word2vec.AnalogyResponseEntity<BR />",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/analogyUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "distanceUsingGET_1": {
+            "main": "./lib/actions/distanceUsingGET_1.js",
+            "title": "Word2Vec distance",
+            "description": "Word2Vec JaWikipedia 2016-9-15 dump.<BR />Response<BR />&nbsp; Github: <a href=\"https://github.com/keigohtr/apitore-response-parent/tree/master/word2vec-response\">word2vec-response</a><BR />&nbsp; Class: com.apitore.banana.response.word2vec.DistanceResponseEntity<BR />",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/distanceUsingGET_1.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "similarityUsingGET": {
+            "main": "./lib/actions/similarityUsingGET.js",
+            "title": "Word2Vec similarity",
+            "description": "Word2Vec JaWikipedia 2016-9-15 dump.<BR />Response<BR />&nbsp; Github: <a href=\"https://github.com/keigohtr/apitore-response-parent/tree/master/word2vec-response\">word2vec-response</a><BR />&nbsp; Class: com.apitore.banana.response.word2vec.SimilarityResponseEntity<BR />",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/similarityUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "vec_distanceUsingGET": {
+            "main": "./lib/actions/vec_distanceUsingGET.js",
+            "title": "Word2Vec distance (Vector version)",
+            "description": "Word2Vec JaWikipedia 2016-9-15 dump.<BR />Response<BR />&nbsp; Github: <a href=\"https://github.com/keigohtr/apitore-response-parent/tree/master/word2vec-response\">word2vec-response</a><BR />&nbsp; Class: com.apitore.banana.response.word2vec.DistanceResponseEntity<BR />",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/vec_distanceUsingGET.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "wordvectorUsingGET_1": {
+            "main": "./lib/actions/wordvectorUsingGET_1.js",
+            "title": "Word2Vec wordvector",
+            "description": "Word2Vec JaWikipedia 2016-9-15 dump.<BR />Response<BR />&nbsp; Github: <a href=\"https://github.com/keigohtr/apitore-response-parent/tree/master/word2vec-response\">word2vec-response</a><BR />&nbsp; Class: com.apitore.banana.response.word2vec.WordVectorResponseEntity<BR />",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/wordvectorUsingGET_1.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

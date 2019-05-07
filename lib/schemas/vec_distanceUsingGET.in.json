@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "access_token": {
+            "required": true,
+            "type": "string"
+        },
+        "vector": {
+            "required": true,
+            "type": "array",
+            "items": {
+                "format": "double",
+                "type": "number"
+            }
+        },
+        "num": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+        }
+    }
+}

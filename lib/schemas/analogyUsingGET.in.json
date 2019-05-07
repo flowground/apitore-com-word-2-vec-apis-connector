@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "access_token": {
+            "required": true,
+            "type": "string"
+        },
+        "positives": {
+            "required": true,
+            "type": "string"
+        },
+        "negatives": {
+            "required": false,
+            "type": "string"
+        },
+        "num": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+        }
+    }
+}
