@@ -1,11 +1,11 @@
-# ![LOGO](logo.png) Word2Vec APIs MSP Connector
+# ![LOGO](logo.png) Word2Vec APIs **flow**ground Connector
 
 ## Description
 
-A generated MSP connector for the Word2Vec APIs API (version 1.0.2).
+A generated **flow**ground connector for the Word2Vec APIs API (version 1.0.2).
 
 Generated from: https://api.apis.guru/v2/specs/apitore.com/word2vecApis/1.0.2/swagger.json<br/>
-Generated at: 2019-05-07T11:17:10+03:00
+Generated at: 2019-05-07T17:36:52+03:00
 
 ## API Description
 
@@ -74,7 +74,7 @@ This API does not require authorization.
 
 ## License
 
-flowground :- Telekom iPaaS / apitore-com-word-2-vec-apis-connector<br/>
+**flow**ground :- Telekom iPaaS / apitore-com-word-2-vec-apis-connector<br/>
 Copyright © 2019, [Deutsche Telekom AG](https://www.telekom.de)<br/>
 contact: flowground@telekom.de
 
